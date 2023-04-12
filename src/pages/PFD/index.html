@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFD | LVSAT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="tat">TEMP</div>
+        <div id="clock">12 : 00 : 00</div>
+        <div id="prs">PRESSURE</div>
+
+    </header>
+    <div class="container">
+        <div class="left">
+            <div class="spd">SPD</div>
+        </div>
+        <div class="center">
+            <div class="ins">
+                <span id="attitude">
+                    <div class="instrument attitude" style="height: 500px; width: 500px;"><img class="background box"
+                            alt="">
+                        <div class="roll box" style="transform: rotate(-16.4983deg);"><img src="" class="box" alt="">
+                            <div class="pitch box" style="top: 10.0468%;"><img class="box" alt=""></div>
+                            <img class="box" alt="">
+                        </div>
+                        <div class="mechanics box"><img src="" class="box" alt=""><img src="" class="box" alt=""></div>
+                    </div>
+                </span>
+            </div>
+            <span id="heading">
+                <div class="instrument heading" style="height: 200px; width: 200px;"><img src=""
+                        class="background box" alt="">
+                    <div class="heading box"><img src="" class="box" alt="">
+                    </div>
+                    <div class="mechanics box"><img src="" class="box" alt=""><img src="" class="box" alt=""></div>
+                </div>
+            </span>
+        </div>
+        <div class="right">
+            <div class="alt" id="ALT">ALT</div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="gs">GS</div>
+        <div id="crs">CRS</div>
+        <div id="hdg">HDG</div>
+        <div><button onclick="mainMenu()">back</button></div>
+    </footer>
+
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+
+        function mainMenu(){
+            window.location.replace('../index/index.html')
+        }
+    </script>
+
+    <!-- normal script imports etc  -->
+    <script src="js/prism.js"></script>
+
+    <!-- Importing jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Importing the FlightIndicators library -->
+    <script src="js/jquery.indicators.js"></script>
+
+    
+    <!-- Let start our scripts -->
+    <script type="module" src="js/script.js"></script>
+    <script src="../clock.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+    
+</body>
+</html>

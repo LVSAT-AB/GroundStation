@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="400.667px"
+   height="400.666px"
+   viewBox="0 0 400.667 400.666"
+   enable-background="new 0 0 400.667 400.666"
+   xml:space="preserve"
+   id="svg10765"
+   sodipodi:docname="horizon_circle.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs10769" /><sodipodi:namedview
+   id="namedview10767"
+   pagecolor="#505050"
+   bordercolor="#eeeeee"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#505050"
+   showgrid="false"
+   inkscape:zoom="1.5230471"
+   inkscape:cx="290.20771"
+   inkscape:cy="139.19465"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   inkscape:window-x="1912"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_2" />
+<filter
+   filterUnits="objectBoundingBox"
+   id="AI_Shadow_1"
+   x="-1.2e-06"
+   y="-1.2e-06"
+   width="1.0000024"
+   height="1.0000024">
+	<feGaussianBlur
+   stdDeviation="0.000149767"
+   result="blur"
+   in="SourceAlpha"
+   id="feGaussianBlur10728" />
+	<feOffset
+   dy="0"
+   dx="0"
+   result="offsetBlurredAlpha"
+   in="blur"
+   id="feOffset10730" />
+	<feMerge
+   id="feMerge10736">
+		<feMergeNode
+   in="offsetBlurredAlpha"
+   id="feMergeNode10732" />
+		<feMergeNode
+   in="SourceGraphic"
+   id="feMergeNode10734" />
+	</feMerge>
+</filter>
+<g
+   id="Layer_2">
+	<linearGradient
+   id="SVGID_2_"
+   gradientUnits="userSpaceOnUse"
+   x1="200.667"
+   y1="349.9331"
+   x2="200.667"
+   y2="50.3999">
+		<stop
+   offset="0.49990001"
+   style="stop-color:#c03911;stop-opacity:1;"
+   id="stop10739" />
+		<stop
+   offset="0.50010002"
+   style="stop-color:#11b9c0;stop-opacity:1;"
+   id="stop10741" />
+	</linearGradient>
+	<path
+   fill="url(#SVGID_2_)"
+   filter="url(#AI_Shadow_1)"
+   d="M200.667,50.4C117.953,50.4,50.9,117.453,50.9,200.167   s67.053,149.767,149.767,149.767s149.767-67.053,149.767-149.767S283.38,50.4,200.667,50.4z M200.667,300.5   c-55.413,0-100.334-44.921-100.334-100.334c0-55.412,44.921-100.333,100.334-100.333C256.079,99.833,301,144.753,301,200.166   C301,255.579,256.079,300.5,200.667,300.5z"
+   id="path10744"
+   style="fill-rule:nonzero;stroke:none;filter:url(#AI_Shadow_1)" />
+	<line
+   fill="none"
+   stroke="#FFFFFF"
+   stroke-width="4"
+   stroke-miterlimit="10"
+   x1="50.667"
+   y1="200.333"
+   x2="100.333"
+   y2="200.333"
+   id="line10746" />
+	<line
+   fill="none"
+   stroke="#FFFFFF"
+   stroke-width="4"
+   stroke-miterlimit="10"
+   x1="300.749"
+   y1="200.333"
+   x2="350.433"
+   y2="200.333"
+   id="line10748" />
+	<line
+   fill="none"
+   stroke="#FFFFFF"
+   stroke-width="4"
+   stroke-miterlimit="10"
+   x1="78.415"
+   y1="131.582"
+   x2="112.082"
+   y2="151.915"
+   id="line10750" />	
+	<line
+   fill="none"
+   stroke="#FFFFFF"
+   stroke-width="4"
+   stroke-miterlimit="10"
+   x1="288.751"
+   y1="151.915"
+   x2="323.585"
+   y2="131.582"
+   id="line10752" />
+	<line
+   fill="none"
+   stroke="#FFFFFF"
+   stroke-width="4"
+   stroke-miterlimit="10"
+   x1="149.418"
+   y1="113.75"
+   x2="129.418"
+   y2="79.25"
+   id="line10754"
+   style="stroke-width:4;stroke-dasharray:none" />
+	<line
+   fill="none"
+   stroke="#FFFFFF"
+   stroke-width="4"
+   stroke-miterlimit="10"
+   x1="252.084"
+   y1="113.75"
+   x2="272.751"
+   y2="79.25"
+   id="line10756" />
+	<polygon
+   fill="#FFFFFF"
+   points="185.918,60.085 215.251,60.085 200.585,98.918  "
+   id="polygon10758"
+   style="fill:none;stroke:#f6ff00;stroke-opacity:1;fill-opacity:1;stroke-width:2;stroke-dasharray:none" />
+	<polygon
+   fill="#FFFFFF"
+   points="119.084,117.417 112.082,124.251 126.584,131.582  "
+   id="polygon10760"
+   style="fill:none;stroke:#f6ff00;stroke-opacity:1" />
+	<polygon
+   fill="#FFFFFF"
+   points="274.084,131.582 281.251,117.417 288.751,124.5  "
+   id="polygon10762"
+   style="stroke:#f6ff00;stroke-opacity:1;fill:none" />
+</g>
+</svg>

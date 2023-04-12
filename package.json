@@ -1,0 +1,21 @@
+{
+  "name": "hmi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^23.2.1",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.2",
+    "serialport": "^10.5.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1"
+  }
+}

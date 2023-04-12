@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../../fonts/montserrat.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #282828;
+    color: #eee;
+}
+
+#clock {
+    font-size: 35px;
+}
+
+html {
+    overflow: hidden
+}
+
+#wrapper {
+    background: #282828;
+    height: 90vh;
+    width: 100%;
+    display: grid;
+}
+
+form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #282828;
+    width: 50vw;
+    height: 50vh;
+}
+
+form input {
+    margin: 15px;
+    font-size: 20px;
+}
+
+#container {
+    display: none;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+button,
+button:focus,
+button:active {
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    font-size: 2.5rem;
+    background: #eee;
+    font-weight: 800;
+    border-radius: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 12rem;
+}
+
+button:hover {
+    transition: 0.2s;
+    font-size: 55px;
+    background: aqua;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        display: none;
+        grid-template-columns: auto auto;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #container {
+        display: none;
+        grid-template-columns: auto;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+}

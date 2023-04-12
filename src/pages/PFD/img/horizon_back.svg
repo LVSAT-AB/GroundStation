@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="400.667px"
+   height="400.666px"
+   viewBox="0 0 400.667 400.666"
+   enable-background="new 0 0 400.667 400.666"
+   xml:space="preserve"
+   id="svg3738"
+   sodipodi:docname="horizon_back.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs3742" /><sodipodi:namedview
+   id="namedview3740"
+   pagecolor="#505050"
+   bordercolor="#eeeeee"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#505050"
+   showgrid="false"
+   inkscape:zoom="2.1539138"
+   inkscape:cx="176.42303"
+   inkscape:cy="200.10086"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   inkscape:window-x="1912"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg3738" />
+	<linearGradient
+   id="backHorizon_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="200.667"
+   y1="350.0991"
+   x2="200.667"
+   y2="50.5659">
+		<stop
+   offset="0.4999"
+   style="stop-color:#503723"
+   id="stop3732" />
+		<stop
+   offset="0.5001"
+   style="stop-color:#558EBB"
+   id="stop3734" />
+	</linearGradient>
+	<circle
+   id="backHorizon"
+   fill="url(#backHorizon_1_)"
+   cx="200.667"
+   cy="200.333"
+   r="149.767" />
+<rect
+   style="fill:#11b9c0;fill-rule:evenodd;stroke-width:188.976;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+   id="rect3988"
+   width="304.09756"
+   height="160.17354"
+   x="48.284195"
+   y="40.39159" /><rect
+   style="fill:#c03911;fill-rule:evenodd;stroke-width:188.976;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;fill-opacity:1"
+   id="rect4006"
+   width="304.09756"
+   height="160.17354"
+   x="48.284195"
+   y="200.39159" /></svg>
