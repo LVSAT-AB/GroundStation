@@ -118,7 +118,7 @@ let t = parser.on('data', (data) => {
                     break;
                 case 'PRS':
                     da = da.slice(0, -1)
-                    prs.innerHTML = da + 'mbar';
+                    prs.innerHTML = da;
                     break;
                 case 'TAT':
                     da = da.slice(0, -1)
@@ -169,7 +169,7 @@ let t = parser.on('data', (data) => {
         let d = new Date;
         let time = d.getTime()
         time = d.toISOString();
-        let msgf = time + temp.innerHTML + '_' + alti.innerHTML + ',';
+        let msgf = time + temp.innerHTML + '_' + alti.innerHTML + '_' + prs.innerHTML + ',';
         dataReceived += msgf
 
 

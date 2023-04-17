@@ -1,10 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 const os = require('os')
+const ChartJsImage = require('chartjs-to-image');
 
 //Define context / references for de divs in index.html
 const ctxTemp = document.querySelector('#temp');
 const ctxAlt = document.querySelector('#alt');
+const ctxPrs = document.querySelector('#prs')
 
 async function getFile() {
     let file = await fetch(path.join(os.homedir(), 'Desktop/LVSAT_EXPORT.txt'));
@@ -14,6 +16,8 @@ async function getFile() {
     let packet = file.split(',')
     let separatedPackets = new Array;
 
+
+
     packet.forEach(item => {
         separatedPackets.push(item.slice(11).split('Z'))
     });
@@ -21,15 +25,20 @@ async function getFile() {
     let timeStamps = new Array;
     let data = new Array;
 
+
+
     separatedPackets.forEach((packet) => {
         timeStamps.push(packet[0])
         data.push(packet[1]);
     })
 
-    let alt = new Array, temp = new Array;
+
+    let alt = new Array, temp = new Array, prs = new Array;
     data.forEach((val) => {
         temp.push(val.split('_')[0])
         alt.push(val.split('_')[1])
+        prs.push(val.split('_')[2])
+
     })
 
     let tempChart = new Chart(ctxTemp, {
@@ -76,10 +85,31 @@ async function getFile() {
         }
     });
 
+    let prsChart = new Chart(ctxPrs, {
+        type: 'line',
+        data: {
+            labels: timeStamps,
+            datasets: [{
+                label: "PRS",
+                data: prs,
+                borderColor: '#00ffff',
+                backgroundColor: '#00ffff',
+            }],
+
+        },
+        options: {
+            animation: false,
+            scales: {
+                y: {
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+
     let altImg = altChart.toBase64Image('image/jpeg', 1);
     let tempImg = tempChart.toBase64Image('image/jpeg', 1);
-
-    console.log(alt)
+    let prsImg = prsChart.toBase64Image('image/jpeg', 1);
 
     setTimeout(() => {
         let d = new Date;
@@ -94,6 +124,13 @@ async function getFile() {
         let pathTemp = path.join(os.homedir(), 'Desktop', t.toString() + 'temp.jpg');
         fs.appendFile(pathTemp, tempImg, function (err) { if (err) { alert(err) } })
     }, 100)
+
+    setTimeout(() => {
+        let d = new Date;
+        let t = d.getTime();
+        let pathTemp = path.join(os.homedir(), 'Desktop', t.toString() + 'prs.jpg');
+        fs.appendFile(pathTemp, prsImg, function (err) { if (err) { alert(err) } })
+    }, 200)
 
 
 
