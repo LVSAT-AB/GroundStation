@@ -4,6 +4,9 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os')
 
+const socket = io.connect('http://localhost:3000')
+
+
 let com = localStorage.getItem('COM');
 let bps = parseInt(localStorage.getItem('BPS'));
 
@@ -70,6 +73,7 @@ const fileDescriptor = fs.openSync(Fpath, 'w');
 
 let t = parser.on('data', (data) => {
     let m = data;
+    socket.emit('actualizarDatos', m);
 
     let a = m.split('_')
 

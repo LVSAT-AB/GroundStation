@@ -1,6 +1,8 @@
 const {app, BrowserWindow} = require('electron');
 const url = require('url');
 const path = require('path');
+const io = require('socket.io-client')
+const socket = io.connect('http://localhost:3000');
 
 function createWindow(){
     const win = new BrowserWindow({
